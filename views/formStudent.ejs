@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add a New Student</h1>
+    <form action="/posts/add" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br>
+
+        <!-- <label for="difficulty">Difficulty:</label>
+        <input type="text" id="difficulty" name="difficulty" required><br> -->
+
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="Hard">Hard</option>
+            <option value="Medium">Medium</option>
+            <option value="Easy">Easy</option>
+        </select><br>
+
+        <label for="estimatedTime">Estimated Time:</label>
+        <input type="text" id="estimatedTime" name="estimatedTime"><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea><br>
+
+        <label for="totalVote">Total Votes:</label>
+        <input type="number" id="totalVote" name="totalVote"><br>
+
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" name="imageUrl"><br>
+
+        <label for="createdDate">Created Date:</label>
+        <input type="date" id="createdDate" name="createdDate"><br>
+
+        <label for="authorName">Author Name:</label>
+        <select id="authorName" name="authorName">
+            <% authors.forEach(author=> { %>
+                <option value="<%= author.id %>">
+                    <%= author.fullName %>
+                </option>
+                <% }); %>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/">Cancel Add</a>
+</body>
+
+</html>

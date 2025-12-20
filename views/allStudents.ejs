@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/">Back to Home</a>
+    <table class="table" border="1">
+      <thead>
+        <tr>
+          <th scope="col">name</th>
+          <th scope="col">grade</th>
+          <th scope="col">hobby</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% result.forEach(element => { %>
+        <tr>
+          <td><%= element.name %></td>
+          <td><%= element.grade %></td>
+          <td><%= element.hobby %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

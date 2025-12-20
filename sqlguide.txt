@@ -1,0 +1,8 @@
+CREATE DATABASE "randomDB";
+
+DROP DATABASE IF EXISTS "randomDB";
+
+SELECT pg_terminate_backend(pid)
+      FROM pg_stat_activity
+      WHERE datname = "randomDB"
+        AND pid <> pg_backend_pid();

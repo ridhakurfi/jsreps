@@ -1,0 +1,12 @@
+[
+  { "name": "Aarav Patel", "grade": "Mathematics", "hobby": "Chess" },
+  { "name": "Sofia Rossi", "grade": "Literature", "hobby": "Writing" },
+  { "name": "Kenji Tanaka", "grade": "Physics", "hobby": "Robotics" },
+  { "name": "Amira Hassan", "grade": "Biology", "hobby": "Gardening" },
+  { "name": "Lucas Oliveira", "grade": "Chemistry", "hobby": "Baking" },
+  { "name": "Min-Jae Kim", "grade": "Computer Science", "hobby": "Gaming" },
+  { "name": "Chinedu Okafor", "grade": "Economics", "hobby": "Debating" },
+  { "name": "Elena Petrova", "grade": "History", "hobby": "Archival Research" },
+  { "name": "Mateo García", "grade": "Art", "hobby": "Illustration" },
+  { "name": "Aisha Al-Farsi", "grade": "Environmental Science", "hobby": "Hiking" }
+]
