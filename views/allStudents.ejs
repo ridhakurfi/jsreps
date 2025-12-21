@@ -7,20 +7,29 @@
   </head>
   <body>
     <a href="/">Back to Home</a>
+    <a href="/students/add">Add a Student</a>
     <table class="table" border="1">
       <thead>
         <tr>
-          <th scope="col">name</th>
-          <th scope="col">grade</th>
-          <th scope="col">hobby</th>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Grade</th>
+          <th scope="col">Hobby</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
         <% result.forEach(element => { %>
         <tr>
+          <td><%= element.id %></td>
           <td><%= element.name %></td>
           <td><%= element.grade %></td>
           <td><%= element.hobby %></td>
+          <td>
+            <a href="/students/<%=element.id%>/detail">Details</a>
+            <a href="/students/<%=element.id%>/edit">Edit</a>
+            <a href="/students/<%=element.id%>/delete">Delete</a>
+          </td>
         </tr>
         <% }) %>
       </tbody>

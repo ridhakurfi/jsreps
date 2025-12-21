@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Detail</title>
+  </head>
+  <body>
+    <h1>Student Profile</h1>
+
+    <p>This page shows detailed information about one student.</p>
+
+    <hr />
+
+    <div>
+      <strong>ID:</strong>
+      <span><%= result.id %></span>
+    </div>
+
+    <br />
+
+    <div>
+      <strong>Name:</strong>
+      <span><%= result.name %></span>
+    </div>
+
+    <br />
+
+    <div>
+      <strong>Grade:</strong>
+      <span><%= result.grade %></span>
+    </div>
+
+    <br />
+
+    <div>
+      <strong>Hobby:</strong>
+      <span><%= result.hobby %></span>
+    </div>
+
+    <hr />
+
+    <a href="/students">← Back to Student List</a>
+  </body>
+</html>

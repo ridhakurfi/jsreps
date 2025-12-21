@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <name>Document</name>
+</head>
+
+<body>
+    <form action="/students/<%= result.id %>/edit" method="POST">
+        <label for="id">Edit post for ID:</label>
+        <input type="text" id="id" name="id" readonly value="<%= result.id %>"><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required value="<%= result.name %>"><br>
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required value="<%= result.grade %>"><br>
+
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby" name="hobby" required value="<%=result.hobby%>"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/students">Cancel Edit</a>
+</body>
+
+</html>
