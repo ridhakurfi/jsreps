@@ -19,11 +19,11 @@
 
     <form action="/students/add" method="POST">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br />
+      <input type="text" id="name" name="name" value="<%= formData?.name || '' %>"/><br />
       <label for="grade">Grade:</label>
-      <input type="text" id="grade" name="grade" /><br />
+      <input type="text" id="grade" name="grade" value="<%= formData?.grade || '' %>" /><br />
       <label for="hobby">Hobby:</label>
-      <input type="text" id="hobby" name="hobby" /><br />
+      <input type="text" id="hobby" name="hobby" value="<%= formData?.hobby || '' %>" /><br />
       <input type="submit" value="Submit" />
     </form>
     <a href="/">Cancel Add</a>

@@ -22,6 +22,7 @@ class Controller {
     try {
       res.render("formStudent", {
         errors: [],
+        formData: {}
       });
     } catch (error) {
       console.log(error);
@@ -34,6 +35,7 @@ class Controller {
       if (Array.isArray(result)) {
         return res.render("formStudent", {
           errors: result,
+          formData: req.body
         });
       }
       res.redirect("/students");
