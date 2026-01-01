@@ -8,5 +8,5 @@ app.set("view engine", "ejs");
 app.use(router);
 
 app.listen(port, () => {
-  console.log(`Andara ${port} click here http://localhost:3000/`);
+  console.log(`Andaraa ${port} click here http://localhost:3000/`);
 });
