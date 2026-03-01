@@ -24,9 +24,9 @@ class Controller {
         errors: [],
         formData: {}
       });
-    } catch (errorer) {
-      console.log(errorer);
-      res.send(errorer);
+    } catch (er) {
+      console.log(er);
+      res.send(er);
     }
   }
   static async addStudent(req, res) {
