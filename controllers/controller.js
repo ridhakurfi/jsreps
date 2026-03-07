@@ -13,9 +13,9 @@ class Controller {
     try {
       let result = await Model.getStudents();
       res.render("allStudents", { result });
-    } catch (r) {
-      console.log(r);
-      res.send(r);
+    } catch (error) {
+      console.log(error);
+      res.send(error);
     }
   }
   static async addStudentForm(req, res) {
