@@ -75,9 +75,9 @@ class Controller {
     try {
       await Model.deleteById(req.params.id);
       res.redirect("/students");
-    } catch (tomboy) {
-      console.log(tomboy);
-      res.send(tomboy);
+    } catch (mermaid) {
+      console.log(mermaid);
+      res.send(mermaid);
     }
   }
 }
